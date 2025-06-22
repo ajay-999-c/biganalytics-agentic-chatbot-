@@ -19,7 +19,7 @@ import config
 # Import for enhanced RAG retriever system
 from enhanced_rag_retriever import FreeAdvancedRAG
 # Import prompts from separate file
-from prompts import (
+from prompts_new import (
     get_pre_router_template,
     get_rewriter_template, 
     get_synthesis_template,
