@@ -128,23 +128,30 @@ retriever = get_retriever()
 @tool
 def bignalytics_knowledge_search(query: str) -> str:
     """
-    Comprehensive search tool for Bignalytics Institute knowledge base.
+    🏫 BIGNALYTICS INSTITUTIONAL KNOWLEDGE SEARCH TOOL
     
-    This tool retrieves precise information including FAQ sections, quick reference data, and structured content about:
-    - Course offerings (Data Analytics, Data Science, AI/ML) with exact durations and fees
-    - Curriculum details, technologies, and tools taught
-    - Class schedules, timings, and lab session information
-    - Placement statistics and career outcomes
-    - Institute information, contact details, and location
-    - Faculty expertise and learning methodologies
+    ⚠️ **IMPORTANT: ONLY use this tool for Bignalytics Institute-specific questions!**
     
-    IMPORTANT: This tool returns information in FAQ format (Q: question, A: answer) and structured sections.
-    When the retrieved content contains a direct Q&A match for the user's question, use that exact answer.
-    For example, if you see "Q: What is the duration of the AI & ML course?" followed by 
-    "A: The Master Program in Artificial Intelligence & Machine Learning has a duration of 12-14 months",
-    use that precise answer directly.
+    🔍 **Use this tool for questions about:**
+    - Course offerings, fees, duration, curriculum details
+    - Class schedules, timings, lab sessions
+    - Placement statistics, average salaries, hiring companies
+    - Faculty information, teaching methodology
+    - Institute location, contact information
+    - Admission process, payment options, discounts
+    - Learning format (online/offline), facilities
     
-    Returns comprehensive, contextually relevant information that should be directly extracted and used.
+    ❌ **DO NOT use this tool for:**
+    - General programming questions (Python syntax, algorithms, etc.)
+    - Technology explanations (how HTTP works, what is machine learning, etc.)
+    - General career advice not specific to Bignalytics
+    - Technical tutorials or code examples
+    
+    💡 **Rule of thumb:** Ask yourself - "Does this question require specific information about Bignalytics Institute?" 
+    If NO, answer directly from your knowledge instead of using this tool.
+    
+    This tool searches Bignalytics' comprehensive FAQ database and returns precise institutional information 
+    in FAQ format (Q: question, A: answer) and structured sections.
     """
     if retriever is None:
         return "Knowledge base is not accessible. Please contact the institute directly."

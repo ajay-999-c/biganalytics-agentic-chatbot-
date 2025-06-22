@@ -232,3 +232,11 @@ site/
 # Virtual environment alternatives
 .conda/
 conda-meta/
+
+# Test files - development and debugging
+test_*.py
+*_test.py
+simple_*.py
+fresh_*.py
+direct_*.py
+rebuild_vectors.py
